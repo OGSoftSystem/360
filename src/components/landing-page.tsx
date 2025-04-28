@@ -1,4 +1,3 @@
-import React from "react";
 import MaxWidthContainer from "./max-width-container";
 import Image from "next/image";
 
@@ -32,6 +31,7 @@ const LandingPage = () => {
             height={100}
             alt="counter"
             className="object-contain"
+            priority
           />
         </div>
 
@@ -54,6 +54,7 @@ const LandingPage = () => {
               fill
               alt="counter"
               className="object-contain"
+              priority
             />
           </div>
         </div>
