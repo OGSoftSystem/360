@@ -58,7 +58,7 @@ const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmitForm)}
-        className="px-10 py-8 bg-app-gray w-full md:w-6/12 "
+        className="px-10 py-8 bg-app-gray w-full "
       >
         <h4 className="text-app-white mb-6 text-lg font-semibold uppercase">
           Contact Us
@@ -101,7 +101,7 @@ const ContactForm = () => {
         </div>
 
         <CustomSubmitBtn
-          title="Send Message"
+          title="Send"
           isSubmitting={submitting}
           spinnerClassName="text-white"
           className="bg-app-white text-accent-foreground mt-6 cursor-pointer"

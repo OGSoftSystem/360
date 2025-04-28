@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const LandingPage = () => {
   return (
-    <MaxWidthContainer className="paddingY ">
-      <div className="hidden md:block home-card h-fit md:-mt-10 pb-20">
+    <MaxWidthContainer className="paddingY">
+      <div className="hidden md:block home-card h-fit md:-mt-10 pb-24">
         <h1 className="title z-10">
           FULL SERVICE <br />
           CONSULTANCY
@@ -24,9 +24,8 @@ const LandingPage = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 mt-10 md:-mt-6">
-        
-        <div className="col-span-2 hidden md:flex items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:-mt-10">
+        <div className="hidden md:flex items-center justify-center">
           <Image
             src="/img/counter.png"
             width={100}
@@ -36,7 +35,7 @@ const LandingPage = () => {
           />
         </div>
 
-        <div className="md:col-span-3 space-y-6 md:w-[40ch] text-center md:text-left">
+        <div className="space-y-4 md:w-[40ch] text-center md:text-left">
           <h2 className="text-app-white font-bold tracking-wide">
             R360° IS A FULL-SERVICE CONSULTANCY FIRM DEDICATED TO SUPPORTING THE
             GROWTH AND SUCCESS OF THE GAMING INDUSTRY.
@@ -59,8 +58,6 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
-      
     </MaxWidthContainer>
   );
 };

@@ -7,9 +7,11 @@ const Footer = () => {
     <footer className="bg-app-black paddingY">
       <MaxWidthContainer className="flex justify-between">
         <div className="my-4">
-          <p className="text-app-white md:text-xl">+1 (xxx) xxx-xxxx </p>
+          <p className="text-app-white text-xs md:text-sm">
+            +1 (xxx) xxx-xxxx{" "}
+          </p>
           <Link
-            className="text-app-white md:text-xl"
+            className="text-app-white text-xs md:text-sm"
             href={"mailto:info@R360consulting.com"}
           >
             info@R360consulting.com
@@ -17,9 +19,13 @@ const Footer = () => {
         </div>
 
         <div className="flex space-x-3 items-center">
-          <p className="text-app-white">Terms</p>
+          <Link href="/" className="text-app-white">
+            Terms
+          </Link>
           <div className="size-1 bg-app-white rounded-full" />
-          <p className="text-app-white">Privacy</p>
+          <Link href="/" className="text-app-white">
+            Privacy
+          </Link>
         </div>
       </MaxWidthContainer>
     </footer>
