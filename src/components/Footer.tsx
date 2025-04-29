@@ -5,7 +5,7 @@ import MaxWidthContainer from "./max-width-container";
 const Footer = () => {
   return (
     <footer className="bg-app-black paddingY">
-      <MaxWidthContainer className="flex justify-between">
+      <MaxWidthContainer >
         <div className="my-4">
           <p className="text-app-white text-xs md:text-sm">
             +1 (xxx) xxx-xxxx{" "}
@@ -18,7 +18,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex space-x-3 items-center">
+        {/* <div className="flex space-x-3 items-center">
           <Link href="/" className="text-app-white">
             Terms
           </Link>
@@ -26,7 +26,7 @@ const Footer = () => {
           <Link href="/" className="text-app-white">
             Privacy
           </Link>
-        </div>
+        </div> */}
       </MaxWidthContainer>
     </footer>
   );

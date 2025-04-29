@@ -82,7 +82,7 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
   --app-white: #ffffff;
   --app-black: #000000;
-  --app-gray: #A5A5A5;
+  --app-gray: #a5a5a5;
   --app-clay: #212121;
 }
 
@@ -145,7 +145,7 @@
   @apply py-8 md:py-16 lg:py-20;
 }
 @utility title {
-  @apply text-app-white text-5xl sm:text-6xl md:text-8xl md:leading-24 tracking-wider font-bold;
+  @apply text-app-white text-[2.8rem] leading-[1] sm:text-6xl md:text-8xl md:leading-24 md:tracking-wider lg:tracking-widest xl:tracking-[2rem] font-bold;
 }
 @utility card {
   @apply rounded-4xl bg-app-white p-10 space-y-3;

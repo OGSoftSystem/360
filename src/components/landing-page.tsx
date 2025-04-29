@@ -4,7 +4,7 @@ import Image from "next/image";
 const LandingPage = () => {
   return (
     <MaxWidthContainer className="paddingY">
-      <div className="hidden md:block home-card h-fit md:-mt-10 pb-24">
+      <div className="hidden md:block home-card h-fit md:-mt-10 pb-28">
         <h1 className="title z-10">
           FULL SERVICE <br />
           CONSULTANCY
@@ -23,7 +23,7 @@ const LandingPage = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:-mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:-mt-11">
         <div className="hidden md:flex items-center justify-center">
           <Image
             src="/img/counter.png"
@@ -41,7 +41,7 @@ const LandingPage = () => {
             GROWTH AND SUCCESS OF THE GAMING INDUSTRY.
           </h2>
 
-          <p className="text-app-white tex t-base">
+          <p className="text-app-white text-base">
             With a strong focus on emerging markets across Central and Southeast
             Asia. We specialize in delivering comprehensive solutions tailored
             to the unique challenges and opportunities within these dynamic

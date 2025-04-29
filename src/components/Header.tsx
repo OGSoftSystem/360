@@ -35,11 +35,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-black">
+    <header className="sticky top-0 z-50">
       <MaxWidthContainer className="flex items-center justify-center  py-4">
         <Link
           href={"/"}
-          className="relative w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
+          className="relative w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]"
         >
           <Image
             src="/img/logo.png"

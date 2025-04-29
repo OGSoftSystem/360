@@ -14,11 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase:
+    process.env.NODE_ENV == "production"
+      ? new URL(siteConfig.baseUrl)
+      : new URL("http://localhost:300"),
   title: {
     template: ` %s | ${siteConfig.title}`,
     default: siteConfig.shortDescription,
   },
-  description: siteConfig.description
+  description: siteConfig.description,
+  authors: { name: siteConfig.author.name, url: siteConfig.author.url },
 };
 
 export default function RootLayout({

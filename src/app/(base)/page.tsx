@@ -53,19 +53,24 @@ const Home = () => {
       <div className="md:block hidden dice w-full h-[550px] mt-20"></div>
 
       <div className="md:hidden relative w-full h-[300px] md:mt-16">
-        <Image src="/img/big-dice.png" fill className="object-contain" alt="whot" />
+        <Image
+          src="/img/big-dice.png"
+          fill
+          className="object-contain"
+          alt="whot"
+        />
       </div>
 
       <div className="contact-image md:paddingY">
         <MaxWidthContainer className="flex flex-col items-center">
-          <h1 className="text-app-white font-bold max-w-prose md:mb-4 py-10">
+          <h1 className="text-app-white font-bold max-w-prose md:mb-4 py-10 text-center md:text-left">
             AT R360°, WE ARE COMMITTED TO BEING YOUR TRUSTED PARTNER IN <br />
             NAVIGATING THE GAMING LANDSCAPE—HELPING YOU MOVE FASTER, SMARTER,
             AND MORE CONFIDENTLY IN SOME OF THE WORLD&apos;S MOST PROMISING
             MARKETS.
           </h1>
 
-          <div className="w-full md:w-6/12 self-end md:pt-20">
+          <div className="w-full md:w-6/12 self-end md:pt-16">
             <ContactForm />
           </div>
         </MaxWidthContainer>

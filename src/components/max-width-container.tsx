@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import React from "react";
 
 const MaxWidthContainer = ({
   children,
@@ -14,7 +13,7 @@ const MaxWidthContainer = ({
     <div
       id={id}
       className={cn(
-        "size-full px-4 md:px-6 lg:px-8 mx-auto max-w-[60rem]",
+        "size-full px-4 md:px-6 lg:px-8 mx-auto max-w-screen-xl",
         className
       )}
     >
