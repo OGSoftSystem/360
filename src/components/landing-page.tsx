@@ -14,7 +14,7 @@ const LandingPage = () => {
       </div>
 
       {/* SMALL SCREEN */}
-      <div className="md:hidden home-card h-[350px] flex items-center justify-center">
+      <div className="md:hidden home-card h-[350px] -mt-16 flex items-center justify-center">
         <h1 className="title z-10 text-center">
           FULL SERVICE <br />
           CONSULTANCY
