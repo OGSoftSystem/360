@@ -104,7 +104,7 @@ const ContactForm = () => {
           title="Send"
           isSubmitting={submitting}
           spinnerClassName="text-white"
-          className="bg-app-white text-accent-foreground mt-6 cursor-pointer"
+          className="bg-app-white text-accent-foreground mt-6 cursor-pointer md:w-[120px]"
         />
       </form>
     </Form>

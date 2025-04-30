@@ -23,8 +23,9 @@ const Home = () => {
         </h1>
       </MaxWidthContainer>
 
-      <MaxWidthContainer className="grid grid-cols-1 sm:grid-cols-2 space-y-4">
+      <MaxWidthContainer className="grid grid-cols-1 sm:grid-cols-2">
         <div className="hidden sm:block"></div>
+
         <div>
           <p className="text-app-white text-sm text-center md:text-left">
             Whether you&apos;re launching a new venture or scaling an existing
@@ -32,7 +33,7 @@ const Home = () => {
             operational support you need to thrive.
           </p>
 
-          <div className="relative w-full h-[300px]">
+          <div className="relative w-full h-[200px] md:h-[300px] md:my-10 my-6">
             <Image
               src="/img/whot.png"
               fill
@@ -50,7 +51,8 @@ const Home = () => {
           </p>
         </div>
       </MaxWidthContainer>
-      <div className="md:block hidden dice w-full h-[550px] mt-20"></div>
+      {/* Big dice image */}
+      <div className="md:block hidden dice w-full h-[550px] mt-16"></div>
 
       <div className="md:hidden relative w-full h-[300px] md:mt-16">
         <Image
