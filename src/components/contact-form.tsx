@@ -13,6 +13,8 @@ import {
   CustomSubmitBtn,
 } from "./form-inputs";
 import { Separator } from "./ui/separator";
+import { sendEmailToContact } from "@/mail/mail.actions";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const initialValues = {
@@ -26,31 +28,23 @@ const ContactForm = () => {
     resolver: zodResolver(ContactSchema),
   });
   const submitting = form.formState.isSubmitting;
-  // const { toast } = useToast();
 
   const onSubmitForm = async (data: ContactSchemaType) => {
     try {
-      // const { success }: { success: boolean } = await sendRequestEmail(data);
-      await new Promise((resolve) => setTimeout(resolve, 300));
+      const { success }: { success: boolean } = await sendEmailToContact(data);
 
-      console.log(data);
-
-      // if (success) {
-      //   form.reset();
-      // }
-      //   toast({
-      //     title: "Successful",
-      //     description: "Message sent successfully",
-      //     variant: "default",
-      //   });
+      if (success) {
+        toast("Successful", {
+          description: "Thank you for reaching out.",
+        });
+        form.reset();
+      }
     } catch (error) {
       console.log(error);
 
-      // toast({
-      //   title: "Something went wrong",
-      //   description: "Could not send request",
-      //   variant: "destructive",
-      // });
+      toast("Something went wrong", {
+        description: "Could not send request",
+      });
     }
   };
 

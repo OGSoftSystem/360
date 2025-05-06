@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const LandingPage = () => {
   return (
-    <MaxWidthContainer className="paddingY">
-      <div className="hidden md:block home-card h-fit md:-mt-10 pb-28">
+    <MaxWidthContainer className="paddingY mt-10 sm:mt-0">
+      <div className="hidden md:block home-card lg:h-[calc(100vh-14vh)] md:-mt-10 pb-28">
         <h1 className="title z-10">
           FULL SERVICE <br />
           CONSULTANCY
@@ -23,10 +23,10 @@ const LandingPage = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:-mt-11">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:-mt-12 lg:-mt-34">
         <div className="hidden md:flex items-center justify-center">
           <Image
-            src="/img/counter.png"
+            src="/img/2.png"
             width={100}
             height={100}
             alt="counter"
@@ -48,12 +48,12 @@ const LandingPage = () => {
             regions.
           </p>
 
-          <div className="relative w-full md:w-[250px] h-[250px]">
+          <div className="relative w-full h-[250px]">
             <Image
-              src="/img/sm-dice.png"
+              src="/img/3.png"
               fill
               alt="counter"
-              className="object-contain"
+              className="object-cover"
               priority
             />
           </div>

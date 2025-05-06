@@ -5,16 +5,20 @@ import MaxWidthContainer from "./max-width-container";
 const Footer = () => {
   return (
     <footer className="bg-app-black paddingY">
-      <MaxWidthContainer >
-        <div className="my-4">
-          <p className="text-app-white text-xs md:text-sm">
-            +1 (xxx) xxx-xxxx{" "}
-          </p>
+      <MaxWidthContainer>
+        <div className="space-y-4 flex flex-col">
+          <Link
+            href={"tel:+63285402075"}
+            className="text-app-white text-xs md:text-sm"
+          >
+            +6 (328) 5402-075{" "}
+          </Link>
+
           <Link
             className="text-app-white text-xs md:text-sm"
-            href={"mailto:info@R360consulting.com"}
+            href={"mailto:info@resolution360.net"}
           >
-            info@R360consulting.com
+            info@resolution360.net
           </Link>
         </div>
 

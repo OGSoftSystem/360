@@ -130,22 +130,23 @@
 }
 
 .home-card {
-  background-image: url("/img/home-card.png");
+  background-image: url("/img/1.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 .dice {
-  background-image: url("/img/big-dice.png");
+  background-image: url("/img/5.png");
   background-repeat: no-repeat;
   background-position: center;
-  object-fit: contain;
+  object-fit: fill;
+  
 }
 
 @utility paddingY {
   @apply py-8 md:py-16 lg:py-20;
 }
 @utility title {
-  @apply text-app-white text-[2.8rem] leading-[1] sm:text-6xl md:text-8xl md:leading-24 md:tracking-wider lg:tracking-widest xl:tracking-[2rem] font-bold;
+  @apply text-app-white text-[2.8rem] leading-[1] sm:text-6xl md:text-7xl md:leading-20 lg:leading-24 lg:text-8xl md:tracking-wider xl:tracking-[1.5rem] font-bold;
 }
 @utility card {
   @apply rounded-4xl bg-app-white p-10 space-y-3;
