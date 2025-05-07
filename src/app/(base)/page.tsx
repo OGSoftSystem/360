@@ -1,4 +1,4 @@
-import ContactForm from "@/components/contact-form";
+// import ContactForm from "@/components/contact-form";
 import LandingPage from "@/components/landing-page";
 import MaxWidthContainer from "@/components/max-width-container";
 import Image from "next/image";
@@ -64,16 +64,11 @@ const Home = () => {
       </div>
 
       <div className="md:hidden relative w-full h-[300px] ">
-        <Image
-          src="/img/5.png"
-          fill
-          className="object-contain"
-          alt="player"
-        />
+        <Image src="/img/5.png" fill className="object-contain" alt="player" />
       </div>
 
       <div className="lg:paddingY">
-        <MaxWidthContainer className="flex flex-col items-center">
+        {/* <MaxWidthContainer className="flex flex-col items-center">
           <h1 className="text-app-white font-bold max-w-prose md:mb-4 py-10 text-center md:text-left">
             AT R360°, WE ARE COMMITTED TO BEING YOUR TRUSTED PARTNER IN <br />
             NAVIGATING THE GAMING LANDSCAPE—HELPING YOU MOVE FASTER, SMARTER,
@@ -84,6 +79,14 @@ const Home = () => {
           <div className="w-full md:w-6/12 self-end lg:pt-16">
             <ContactForm />
           </div>
+        </MaxWidthContainer> */}
+        <MaxWidthContainer>
+          <h1 className="text-app-white font-bold max-w-prose md:mb-4 text-center text-xl lg:text-4xl lg:leading-12">
+            AT R360°, WE ARE COMMITTED TO BEING YOUR TRUSTED PARTNER IN <br />
+            NAVIGATING THE GAMING LANDSCAPE—HELPING YOU MOVE FASTER, SMARTER,
+            AND MORE CONFIDENTLY IN SOME OF THE WORLD&apos;S MOST PROMISING
+            MARKETS.
+          </h1>
         </MaxWidthContainer>
       </div>
     </>
