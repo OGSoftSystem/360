@@ -35,7 +35,7 @@ const LandingPage = () => {
           />
         </div>
 
-        <div className="space-y-4 md:w-[40ch] text-center md:text-left">
+        <div className="space-y-4 md:w-[40ch] md:pr-4 lg:pr-0 text-center md:text-left">
           <h2 className="text-app-white font-bold tracking-wide">
             R360° IS A FULL-SERVICE CONSULTANCY FIRM DEDICATED TO SUPPORTING THE
             GROWTH AND SUCCESS OF THE GAMING INDUSTRY.

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-app-black paddingY">
       <MaxWidthContainer>
-        <div className="space-y-4 flex flex-col">
+        <div className="space-y-4 flex flex-col items-center sm:items-start">
           <Link
             href={"tel:+63285402075"}
             className="text-app-white text-xs md:text-sm"

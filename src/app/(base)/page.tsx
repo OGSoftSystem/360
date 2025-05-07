@@ -54,7 +54,7 @@ const Home = () => {
       {/* Big dice image */}
       {/* <div className="md:block hidden dice w-full h-[550px] mt-16"></div> */}
 
-      <div className="md:block relative w-full h-[600px] lg:mt-16">
+      <div className="hidden md:block relative w-full h-[600px] lg:mt-16">
         <Image
           src="/img/5.png"
           fill
@@ -62,6 +62,7 @@ const Home = () => {
           alt="player"
         />
       </div>
+
       <div className="md:hidden relative w-full h-[300px] ">
         <Image
           src="/img/5.png"
