@@ -35,7 +35,7 @@ const Home = () => {
 
           <div className="relative w-full h-[200px] md:h-[300px] md:my-10 my-6">
             <Image
-              src="/img/whot.png"
+              src="/img/4.png"
               fill
               className="object-contain"
               alt="whot"
@@ -59,7 +59,7 @@ const Home = () => {
           src="/img/5.png"
           fill
           className="md:object-contain lg:object-fill"
-          alt="whot"
+          alt="player"
         />
       </div>
       <div className="md:hidden relative w-full h-[300px] ">
@@ -67,7 +67,7 @@ const Home = () => {
           src="/img/5.png"
           fill
           className="object-contain"
-          alt="whot"
+          alt="player"
         />
       </div>
 
