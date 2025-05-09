@@ -11,7 +11,7 @@ const Footer = () => {
             href={"tel:+63285402075"}
             className="text-app-white text-xs md:text-sm"
           >
-            +6 (328) 5402-075{" "}
+            +63 (28) 5402-075{" "}
           </Link>
 
           <Link
